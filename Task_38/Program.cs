@@ -1,7 +1,7 @@
 ﻿//массив вещественных чисел (5). разницу между максимальным и минимальным элементов массива
 
 
-double[] CreateArray(int length, int min, int max)
+double[] CreateArray(int length, int min, int max) // формируем массив вещ. чисел
 {
     double[] array = new double [length];
     for(int i = 0; i<length; i++)
@@ -11,7 +11,7 @@ double[] CreateArray(int length, int min, int max)
     return array;
 }
 
-void PrintArray(double[] array)
+void PrintArray(double[] array) //вывод массива
 {
     for(int i = 0; i<array.Length; i++)
        Console.Write($"{array[i]} ");
@@ -19,7 +19,7 @@ void PrintArray(double[] array)
        Console.WriteLine();
 }
 
-double FindDiff(double[] array)
+double FindDiff(double[] array) // ищем разницу м/у max и min
 {
     double min = array[0];
     double max = array[0];
